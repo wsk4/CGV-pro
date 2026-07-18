@@ -24,7 +24,7 @@ const Navbar = () => {
             className="text-xl font-semibold tracking-tight cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
             onClick={() => handleClick("home")}
             >
-            MiSPA
+            CGV pro
             </button>
 
             {/* Navegación de escritorio */}

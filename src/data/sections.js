@@ -1,22 +1,44 @@
 // src/data/sections.js
-// Datos estáticos para las secciones principales de la aplicación de una sola página.
+
 export const sections = [
     {
         id: "home",
-        title: "Bienvenido a MiSPA",
-        subtitle:
-        "Esta aplicación de una sola página está lista para escalar manteniéndose simple.",
+        title: "Cgv Pro",
+        subtitle: "Productora de eventos corporativos en Chile",
     },
     {
-        id: "features",
-        title: "Características",
+        id: "hero",
+        title: "Productora de eventos corporativos Chile",
         subtitle:
-        "Componentes modulares, diseño limpio y herramientas modernas con React, Vite y Tailwind.",
+        "Servicios profesionales de producción de eventos para ocasiones memorables.",
+    },
+    {
+        id: "about",
+        title: "Producción impecable para eventos memorables",
+        subtitle:
+        "En Cgv Pro, nos especializamos en la producción impecable de eventos corporativos. Nuestro equipo garantiza que sus eventos empresariales sean memorables e impactantes, desde pequeñas reuniones hasta grandes conferencias.",
+    },
+    {
+        id: "payments",
+        title: "Medios de pago disponibles",
+        subtitle:
+        "Contamos con la opción de pago con tarjetas de crédito y débito, además de los canales tradicionales: transferencia y efectivo.",
+    },
+    {
+        id: "location",
+        title: "Ubicación",
+        subtitle: "San Sebastián 2750, Las Condes, Chile",
+    },
+    {
+        id: "newsletter",
+        title: "Regístrate para recibir novedades",
+        subtitle:
+        "Regístrate para recibir información sobre ofertas especiales, rebajas y eventos.",
     },
     {
         id: "contact",
-        title: "Contacto",
+        title: "Hablemos de tu próximo evento",
         subtitle:
-        "Preparada para conectarse con APIs y formularios en una iteración futura.",
+        "Envíanos los detalles de tu actividad y te ayudaremos a producir un evento impecable.",
     },
 ];
