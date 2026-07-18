@@ -4,7 +4,7 @@ export const heroContent = {
   title: "Productora de eventos corporativos Chile",
   description:
     "Servicios profesionales de producción de eventos para ocasiones memorables.",
-  ctaPrimary: "Ver más detalles",
+  ctaPrimary: "Ver servicios",
   ctaSecondary: "Hablemos de tu evento",
 };
 
@@ -17,7 +17,7 @@ export const aboutContent = {
 export const paymentsContent = {
   title: "Medios de pago",
   body: "Ya contamos con la opción de pago con tarjetas de crédito y débito, además de los canales tradicionales: transferencia y efectivo.",
-  highlight: "01/11 – Información importante para nuestros clientes.",
+  highlight: "Información importante para nuestros clientes.",
 };
 
 export const locationContent = {

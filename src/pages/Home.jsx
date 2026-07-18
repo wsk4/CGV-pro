@@ -19,15 +19,15 @@ const Home = () => {
     const scrollToSection = useScrollToSection();
 
     const homeSection = sections.find((s) => s.id === "home");
-    const heroSection = sections.find((s) => s.id === "hero");
     const aboutSection = sections.find((s) => s.id === "about");
     const paymentsSection = sections.find((s) => s.id === "payments");
     const locationSection = sections.find((s) => s.id === "location");
+    const servicesSection = sections.find((s) => s.id === "services");
     const newsletterSection = sections.find((s) => s.id === "newsletter");
     const contactSection = sections.find((s) => s.id === "contact");
 
     const handleHeroPrimary = () => {
-        scrollToSection("about");
+        scrollToSection("services");
     };
 
     const handleHeroSecondary = () => {
@@ -36,10 +36,8 @@ const Home = () => {
 
     return (
         <>
-        {/* Header general con el nombre y tagline */}
         <Header title={homeSection.title} subtitle={homeSection.subtitle} />
 
-        {/* HERO */}
         <SectionWrapper id="hero">
             <HeroBanner
             eyebrow="Productora de eventos corporativos"
@@ -53,7 +51,6 @@ const Home = () => {
             />
         </SectionWrapper>
 
-        {/* ABOUT / DESCRIPCIÓN DETALLADA */}
         <SectionWrapper id="about">
             <div className="max-w-4xl mx-auto">
             <p className="text-sm font-semibold text-blue-600 uppercase mb-2">
@@ -62,44 +59,39 @@ const Home = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
                 {aboutContent.title}
             </h2>
-            <p className="text-slate-600 leading-relaxed">
-                {aboutContent.body}
-            </p>
+            <p className="text-slate-600 leading-relaxed">{aboutContent.body}</p>
             </div>
         </SectionWrapper>
 
-        {/* PAYMENTS + LOCATION como cards mejoradas */}
         <SectionWrapper id="payments">
-            <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2">
             <Paper className="p-6 md:p-7 shadow-sm border border-slate-100">
-                <h3 className="text-xl font-semibold text-slate-900 mb-2">
+            <h3 className="text-xl font-semibold text-slate-900 mb-2">
                 {paymentsContent.title}
-                </h3>
-                <p className="text-sm text-slate-500 mb-1">
+            </h3>
+            <p className="text-sm text-slate-500 mb-1">
                 {paymentsContent.highlight}
-                </p>
-                <p className="text-slate-600">{paymentsContent.body}</p>
+            </p>
+            <p className="text-slate-600">{paymentsContent.body}</p>
             </Paper>
-
-            <Paper className="p-6 md:p-7 shadow-sm border border-slate-100">
-                <h3 className="text-xl font-semibold text-slate-900 mb-2">
-                {locationContent.title}
-                </h3>
-                <p className="text-slate-600">{locationContent.body}</p>
-            </Paper>
-            </div>
+        </div>
         </SectionWrapper>
 
-        {/* SERVICIOS GENERALES (usando tus Cards para mejorar visualmente) */}
+        <SectionWrapper id="location">
+        <Paper className="p-6 md:p-7 shadow-sm border border-slate-100">
+            <h3 className="text-xl font-semibold text-slate-900 mb-2">
+            {locationContent.title}
+            </h3>
+            <p className="text-slate-600">{locationContent.body}</p>
+        </Paper>
+        </SectionWrapper>
+
         <SectionWrapper id="services">
             <div className="max-w-4xl mx-auto text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
-                Servicios profesionales de producción de eventos
+                {servicesSection.title}
             </h2>
-            <p className="text-slate-600">
-                Producción integral, soporte técnico y logística para eventos
-                corporativos memorables.
-            </p>
+            <p className="text-slate-600">{servicesSection.subtitle}</p>
             </div>
             <div className="grid gap-4 md:grid-cols-3">
             <Card
@@ -117,7 +109,6 @@ const Home = () => {
             </div>
         </SectionWrapper>
 
-        {/* NEWSLETTER */}
         <SectionWrapper id="newsletter">
             <Paper className="p-6 md:p-8 max-w-3xl mx-auto shadow-sm border border-slate-100">
             <h2 className="text-2xl font-semibold text-slate-900 mb-2">
@@ -139,14 +130,12 @@ const Home = () => {
             </Paper>
         </SectionWrapper>
 
-        {/* CONTACTO */}
         <SectionWrapper id="contact">
             <Paper className="p-6 md:p-8 max-w-3xl mx-auto shadow-sm border border-slate-100">
             <h2 className="text-2xl font-semibold text-slate-900 mb-2">
                 {contactSection.title}
             </h2>
             <p className="text-slate-600 mb-4">{contactSection.subtitle}</p>
-            {/* Formularios reales se pueden agregar más adelante */}
             <p className="text-sm text-slate-500">
                 (Pendiente: integrar formulario de contacto o enlace a canales
                 reales de comunicación.)

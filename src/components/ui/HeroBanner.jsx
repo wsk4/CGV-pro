@@ -55,7 +55,6 @@ const HeroBanner = ({
         </div>
 
         <div className="flex-1 w-full">
-            {/* Aquí puedes luego reemplazar por una imagen real de eventos CGV Pro */}
             <div className="w-full h-56 md:h-72 rounded-xl bg-gradient-to-tr from-slate-900 via-slate-800 to-blue-600 shadow-xl flex items-end justify-start p-6">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 text-white max-w-xs text-sm">
                 <p className="font-semibold">
