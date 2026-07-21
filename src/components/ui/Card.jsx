@@ -2,11 +2,10 @@
 import React from "react";
 
 const Card = ({ title, body }) => {
-    // Card es un componente de UI genérico que puede renderizar contenido distinto mediante props.
     return (
-        <article className="rounded-lg border bg-white p-4 shadow-sm">
-        <h3 className="font-semibold mb-2">{title}</h3>
-        <p className="text-sm text-gray-600">{body}</p>
+        <article className="rounded-lg border border-[#334155] bg-[#161B26] p-4 shadow-sm">
+        <h3 className="font-semibold mb-2 text-white">{title}</h3>
+        <p className="text-sm text-slate-400">{body}</p>
         </article>
     );
 };
