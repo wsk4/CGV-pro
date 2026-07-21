@@ -26,13 +26,8 @@ const Home = () => {
     const newsletterSection = sections.find((s) => s.id === "newsletter");
     const contactSection = sections.find((s) => s.id === "contact");
 
-    const handleHeroPrimary = () => {
-        scrollToSection("services");
-    };
-
-    const handleHeroSecondary = () => {
-        scrollToSection("contact");
-    };
+    const handleHeroPrimary = () => scrollToSection("services");
+    const handleHeroSecondary = () => scrollToSection("contact");
 
     return (
         <>
@@ -53,45 +48,45 @@ const Home = () => {
 
         <SectionWrapper id="about">
             <div className="max-w-4xl mx-auto">
-            <p className="text-sm font-semibold text-blue-600 uppercase mb-2">
+            <p className="text-sm font-semibold text-[#B83228] uppercase mb-2">
                 {aboutContent.eyebrow}
             </p>
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
                 {aboutContent.title}
             </h2>
-            <p className="text-slate-600 leading-relaxed">{aboutContent.body}</p>
+            <p className="text-slate-300 leading-relaxed">{aboutContent.body}</p>
             </div>
         </SectionWrapper>
 
         <SectionWrapper id="payments">
-        <div className="grid gap-6 md:grid-cols-2">
-            <Paper className="p-6 md:p-7 shadow-sm border border-slate-100">
-            <h3 className="text-xl font-semibold text-slate-900 mb-2">
+            <div className="grid gap-6 md:grid-cols-2">
+            <Paper sx={{ backgroundColor: '#161B26', border: '1px solid #334155' }} className="p-6 md:p-7 shadow-sm">
+                <h3 className="text-xl font-semibold text-white mb-2">
                 {paymentsContent.title}
-            </h3>
-            <p className="text-sm text-slate-500 mb-1">
+                </h3>
+                <p className="text-sm text-slate-400 mb-1">
                 {paymentsContent.highlight}
-            </p>
-            <p className="text-slate-600">{paymentsContent.body}</p>
+                </p>
+                <p className="text-slate-300">{paymentsContent.body}</p>
             </Paper>
-        </div>
+            </div>
         </SectionWrapper>
 
         <SectionWrapper id="location">
-        <Paper className="p-6 md:p-7 shadow-sm border border-slate-100">
-            <h3 className="text-xl font-semibold text-slate-900 mb-2">
-            {locationContent.title}
+            <Paper sx={{ backgroundColor: '#161B26', border: '1px solid #334155' }} className="p-6 md:p-7 shadow-sm">
+            <h3 className="text-xl font-semibold text-white mb-2">
+                {locationContent.title}
             </h3>
-            <p className="text-slate-600">{locationContent.body}</p>
-        </Paper>
+            <p className="text-slate-300">{locationContent.body}</p>
+            </Paper>
         </SectionWrapper>
 
         <SectionWrapper id="services">
             <div className="max-w-4xl mx-auto text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
                 {servicesSection.title}
             </h2>
-            <p className="text-slate-600">{servicesSection.subtitle}</p>
+            <p className="text-slate-300">{servicesSection.subtitle}</p>
             </div>
             <div className="grid gap-4 md:grid-cols-3">
             <Card
@@ -110,11 +105,11 @@ const Home = () => {
         </SectionWrapper>
 
         <SectionWrapper id="newsletter">
-            <Paper className="p-6 md:p-8 max-w-3xl mx-auto shadow-sm border border-slate-100">
-            <h2 className="text-2xl font-semibold text-slate-900 mb-2">
+            <Paper sx={{ backgroundColor: '#161B26', border: '1px solid #334155' }} className="p-6 md:p-8 max-w-3xl mx-auto shadow-sm">
+            <h2 className="text-2xl font-semibold text-white mb-2">
                 {newsletterContent.title}
             </h2>
-            <p className="text-slate-600 mb-4">{newsletterContent.body}</p>
+            <p className="text-slate-300 mb-4">{newsletterContent.body}</p>
             <div className="flex flex-col sm:flex-row gap-3">
                 <TextField
                 fullWidth
@@ -122,6 +117,14 @@ const Home = () => {
                 label={newsletterContent.placeholder}
                 variant="outlined"
                 size="small"
+                sx={{
+                    '& .MuiOutlinedInput-root': {
+                    color: '#FFFFFF',
+                    '& fieldset': { borderColor: '#334155' },
+                    '&:hover fieldset': { borderColor: '#B83228' },
+                    },
+                    '& .MuiInputLabel-root': { color: '#94a3b8' },
+                }}
                 />
                 <Button variant="contained" color="primary" size="medium">
                 {newsletterContent.cta}
@@ -131,11 +134,11 @@ const Home = () => {
         </SectionWrapper>
 
         <SectionWrapper id="contact">
-            <Paper className="p-6 md:p-8 max-w-3xl mx-auto shadow-sm border border-slate-100">
-            <h2 className="text-2xl font-semibold text-slate-900 mb-2">
+            <Paper sx={{ backgroundColor: '#161B26', border: '1px solid #334155' }} className="p-6 md:p-8 max-w-3xl mx-auto shadow-sm">
+            <h2 className="text-2xl font-semibold text-white mb-2">
                 {contactSection.title}
             </h2>
-            <p className="text-slate-600 mb-4">{contactSection.subtitle}</p>
+            <p className="text-slate-300 mb-4">{contactSection.subtitle}</p>
             <p className="text-sm text-slate-500">
                 (Pendiente: integrar formulario de contacto o enlace a canales
                 reales de comunicación.)

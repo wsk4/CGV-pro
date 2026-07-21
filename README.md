@@ -1,206 +1,197 @@
-# MiSPA React Starter
+# CGV Pro — Landing Page
 
-Plantilla base reutilizable para construir **Single Page Applications (SPA)** con:
+Sitio web de presentación para **CGV Pro**, productora de eventos corporativos en Chile. Construido como una SPA (Single Page Application) con React + Vite, usando Material UI para componentes interactivos y Tailwind CSS para estilos utilitarios.
 
-- React (componentes funcionales + hooks)
-- Vite
-- Tailwind CSS (vía `@tailwindcss/vite`)
-- React Router DOM
+> **Frontend puro:** no realiza llamadas a APIs externas. Todo el contenido es estático y vive en `src/data/`.
 
-Este proyecto está pensado como tu punto de partida para nuevos frontends en React, evitando repetir la misma configuración en cada proyecto.
+***
 
----
+## Stack tecnológico
 
-## Características
+| Tecnología | Versión | Rol |
+|---|---|---|
+| React | 19 | UI y componentes |
+| Vite | 8 | Bundler y dev server |
+| Tailwind CSS | 4 | Estilos utilitarios |
+| Material UI (MUI) | 9 | Componentes UI (botones, inputs, Paper) |
+| React Router DOM | 7 | Enrutamiento SPA |
+| pnpm | — | Gestor de paquetes |
 
-- ⚛️ **Estructura SPA con React**
-  - Página principal (`Home`) compuesta a partir de componentes reutilizables.
-  - Solo componentes funcionales y hooks (sin clases).
+***
 
-- 🧭 **Routing listo para usar**
-  - React Router DOM configurado con una ruta raíz `/`.
-  - Fácil de extender con nuevas páginas (por ejemplo `/about`, `/dashboard`) sin tocar la base.
+## Estructura del proyecto
 
-- 🎨 **Tailwind CSS integrado**
-  - Tailwind v4 integrado con el plugin oficial de Vite (`@tailwindcss/vite`).
-  - Estilos globales gestionados desde `src/index.css`.
-  - Clases utilitarias usadas directamente en JSX para iterar rápido en el diseño.
+```
+CGV-pro/
+├── index.html
+├── vite.config.js
+├── tailwind.config.js          # Paleta de colores brand.*
+├── eslint.config.js
+├── package.json
+└── src/
+    ├── main.jsx                # Entry point (ReactDOM)
+    ├── App.jsx                 # Router y rutas principales
+    ├── index.css               # Estilos globales + fondo base
+    ├── App.css
+    ├── assets/                 # Imágenes y recursos estáticos
+    ├── data/
+    │   ├── blocks.js           # Contenido de texto por sección (hero, about, pagos...)
+    │   └── sections.js         # Metadata de secciones (id, title, subtitle)
+    ├── hooks/
+    │   └── useScrollToSection.js  # Hook para scroll suave a secciones
+    ├── theme/
+    │   └── AppTheme.jsx        # Tema MUI (modo oscuro, colores primarios)
+    ├── components/
+    │   ├── common/
+    │   │   ├── Navbar.jsx      # Barra de navegación fija (responsive)
+    │   │   └── Footer.jsx      # Pie de página
+    │   ├── layout/
+    │   │   ├── Header.jsx      # Encabezado de página con título y subtítulo
+    │   │   └── SectionWrapper.jsx  # Wrapper con padding y max-width para cada sección
+    │   └── ui/
+    │       ├── HeroBanner.jsx  # Banner principal con CTAs y tarjeta visual
+    │       └── Card.jsx        # Tarjeta genérica de servicios
+    ├── layouts/
+    │   └── MainLayout.jsx      # Layout global: Navbar + main + Footer
+    └── pages/
+        └── Home.jsx            # Página principal (todas las secciones)
+```
 
-- 📐 **Estructura limpia y clara**
-  - Separación de responsabilidades:
-    - `components/` → piezas de UI reutilizables (Navbar, Footer, Hero, Card, etc.)
-    - `layouts/` → layouts de alto nivel (MainLayout)
-    - `pages/` → páginas completas (Home)
-    - `hooks/` → hooks personalizados (por ejemplo `useScrollToSection`)
-    - `data/` → datos estáticos que alimentan la UI
+***
 
-- 📱 **Navegación amigable para SPA**
-  - Navbar fija con:
-    - Scroll suave a secciones (`Inicio`, `Características`, `Contacto`)
-    - Menú hamburguesa en móvil y navegación visible en escritorio.
+## Paleta de colores
 
----
+El tema visual está centralizado en dos archivos: `tailwind.config.js` (clases utilitarias) y `src/theme/AppTheme.jsx` (componentes MUI).
 
-## Stack Tecnológico
+| Token | Hex | Uso |
+|---|---|---|
+| `brand-black` | `#0A0D14` | Fondo base de toda la página |
+| `brand-card` | `#161B26` | Fondo de cards y Paper de MUI |
+| `brand-red` | `#B83228` | Color primario: logo, botones CTA, acentos |
+| `brand-redDark` | `#8F2620` | Hover del color primario |
+| `brand-gray` | `#334155` | Bordes de cards e iconos secundarios |
+| `brand-white` | `#FFFFFF` | Texto principal |
 
-- **React** – Librería de UI para SPA
-- **Vite** – Dev server y bundler rápido
-- **Tailwind CSS** – Framework CSS utility-first
-- **React Router DOM** – Routing del lado del cliente
+Para cambiar la paleta, editar **solo estos dos archivos**:
+- `tailwind.config.js` → colores usados como clases `brand-*`
+- `src/theme/AppTheme.jsx` → colores de componentes MUI
 
----
+***
 
-## Empezar a usar la plantilla
+## Contenido editable
+
+Todo el texto del sitio está centralizado en `src/data/`. No es necesario tocar los componentes para cambiar el contenido.
+
+- **`src/data/blocks.js`** — Textos de cada bloque: hero, about, pagos, ubicación, newsletter
+- **`src/data/sections.js`** — Títulos y subtítulos de cada sección (usados en el Header y Navbar)
+
+***
+
+## Requisitos previos
+
+- **Node.js** >= 18
+- **pnpm** >= 8
+
+```bash
+# Instalar pnpm si no lo tienes
+npm install -g pnpm
+```
+
+***
+
+## Instalación y uso
 
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/wsk4/mispa-react-starter.git
-cd mispa-react-starter
+git clone https://github.com/wsk4/CGV-pro.git
+cd CGV-pro
 ```
 
 ### 2. Instalar dependencias
-
-Usando `pnpm` (recomendado):
 
 ```bash
 pnpm install
 ```
 
-O, si prefieres npm/yarn:
-
-```bash
-npm install
-# o
-yarn install
-```
-
-### 3. Levantar el servidor de desarrollo
+### 3. Iniciar el servidor de desarrollo
 
 ```bash
 pnpm dev
-# o
-npm run dev
-# o
-yarn dev
 ```
 
-Abre en el navegador la URL que te muestre la consola (normalmente `http://localhost:5173`).
+El sitio estará disponible en [http://localhost:5173](http://localhost:5173).
 
----
+### 4. Build para producción
 
-## Estructura del proyecto
-
-```text
-.
-├── index.html
-├── package.json
-├── vite.config.js
-└── src
-    ├── main.jsx           # Punto de entrada de React
-    ├── App.jsx            # Componente raíz con React Router
-    ├── index.css          # Estilos globales + import de Tailwind
-    ├── components
-    │   ├── common
-    │   │   ├── Navbar.jsx     # Navegación global (escritorio + móvil)
-    │   │   └── Footer.jsx     # Footer global
-    │   ├── layout
-    │   │   ├── Header.jsx         # Header / título principal de la página
-    │   │   └── SectionWrapper.jsx # Contenedor de secciones con ancla de scroll
-    │   └── ui
-    │       ├── HeroBanner.jsx # Bloque principal de contenido
-    │       └── Card.jsx       # Componente de tarjeta reutilizable
-    ├── layouts
-    │   └── MainLayout.jsx  # Envuelve Navbar, contenido principal y Footer
-    ├── pages
-    │   └── Home.jsx        # Página principal de la SPA
-    ├── hooks
-    │   └── useScrollToSection.js # Scroll suave a secciones por id
-    └── data
-        └── sections.js     # Datos estáticos para las secciones de Home
+```bash
+pnpm build
 ```
 
----
+Los archivos compilados quedan en `dist/`.
 
-## Cómo extender esta base
+### 5. Preview del build
 
-### Crear una nueva página
-
-1. Crea un nuevo componente en `src/pages/`, por ejemplo `About.jsx`:
-
-```jsx
-// src/pages/About.jsx
-import React from "react";
-
-const About = () => {
-  return (
-    <div className="mx-auto max-w-6xl px-4 py-10">
-      <h1 className="text-2xl font-semibold mb-4">About</h1>
-      <p className="text-gray-700">
-        Esta es una página de ejemplo añadida a partir de la plantilla base.
-      </p>
-    </div>
-  );
-};
-
-export default About;
+```bash
+pnpm preview
 ```
 
-2. Registra la ruta en `src/App.jsx`:
+Sirve el build de producción localmente para verificar antes de desplegar.
 
-```jsx
-import About from "./pages/About.jsx";
+### 6. Linter
 
-<Routes>
-  <Route path="/" element={<Home />} />
-  <Route path="/about" element={<About />} />
-</Routes>
+```bash
+pnpm lint
 ```
 
-3. Añade un enlace en la Navbar si quieres navegar por ruta además de por scroll.
-
----
-
-### Sustituir datos estáticos por una API
-
-- Mueve los datos de `src/data/sections.js` a tu backend o a un endpoint.
-- Crea un hook en `src/hooks/` (por ejemplo `useSections.js`) que haga el fetch.
-- Usa ese hook en `Home.jsx` para inyectar los datos a través de props en lugar de importarlos directamente.
-
-Esto mantiene la capa visual desacoplada de la fuente de datos.
-
----
+***
 
 ## Scripts disponibles
 
-En `package.json` encontrarás scripts como:
+| Comando | Descripción |
+|---|---|
+| `pnpm dev` | Inicia el servidor de desarrollo con HMR |
+| `pnpm build` | Genera el build optimizado en `dist/` |
+| `pnpm preview` | Sirve el build de producción localmente |
+| `pnpm lint` | Ejecuta ESLint en todo el proyecto |
 
-```bash
-pnpm dev       # servidor de desarrollo
-pnpm build     # build de producción
-pnpm preview   # previsualizar el build
+***
+
+## Agregar o editar contenido
+
+### Cambiar texto de una sección
+
+Editar el objeto correspondiente en `src/data/blocks.js`:
+
+```js
+// Ejemplo: cambiar el título del hero
+export const heroContent = {
+  title: "Tu nuevo título aquí",
+  description: "Nueva descripción...",
+  ctaPrimary: "Ver servicios",
+  ctaSecondary: "Hablemos",
+};
 ```
 
-(Con npm/yarn puedes usar `npm run dev`, etc.)
+### Agregar una nueva sección
 
----
+1. Agregar la entrada en `src/data/sections.js`
+2. Agregar el contenido en `src/data/blocks.js`
+3. Crear un nuevo bloque en `src/pages/Home.jsx` usando `<SectionWrapper>`
 
-## Notas personales
+### Agregar una nueva página (ruta)
 
-Esta plantilla está pensada para:
+1. Crear el componente en `src/pages/NuevaPagina.jsx`
+2. Registrar la ruta en `src/App.jsx`:
 
-- Usarse como base en proyectos de clientes, pruebas técnicas y proyectos personales.
-- Evitar configurar desde cero Vite, React, Tailwind y React Router en cada nuevo repo.
-- Servir como ejemplo de arquitectura limpia de un frontend React SPA listo para escalar.
+```jsx
+<Route path="/nueva" element={<NuevaPagina />} />
+```
 
-Cuando empieces un nuevo proyecto:
+***
 
-1. Clona este repo (`mispa-react-starter`).  
-2. Cambia textos, branding y secciones según el proyecto.  
-3. Añade rutas y páginas que necesites, manteniendo la estructura base.
+## Notas de desarrollo
 
----
-
-## Licencia
-
-Puedes adaptar y reutilizar esta plantilla libremente en tus propios proyectos.
+- **Sin API:** actualmente el sitio no consume endpoints externos. Para integrar una API en el futuro, reemplazar las importaciones de `src/data/` por llamadas con `fetch` o RTK Query en los componentes correspondientes.
+- **MUI + Tailwind:** ambos sistemas de estilos coexisten. MUI maneja los componentes interactivos (botones, inputs, Paper); Tailwind maneja el layout, espaciado y tipografía. Evitar mezclar `sx` de MUI con clases Tailwind en el mismo elemento para no generar conflictos de especificidad.
+- **Scroll navigation:** el hook `useScrollToSection` en `src/hooks/` gestiona el scroll suave entre secciones. Los IDs de sección deben coincidir entre `sections.js` y los props `id` de cada `<SectionWrapper>`.

@@ -1,14 +1,12 @@
 @import "tailwindcss";
 
-/* Estilos globales */
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
-  background-color: #f9fafb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #0A0D14; /* ← era #f9fafb, esto overrideaba todo */
+  color: #FFFFFF;
 }
 
-/* Habilita el scroll suave en toda la página. */
 html {
   scroll-behavior: smooth;
 }
