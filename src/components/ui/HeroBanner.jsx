@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "@mui/material";
 
 const HeroBanner = ({
+    brandLogo,
     eyebrow,
     title,
     description,
@@ -20,10 +21,13 @@ const HeroBanner = ({
                 {eyebrow}
             </p>
             )}
+
             <h1 className="text-3xl md:text-4xl font-bold leading-tight text-white">
             {title}
             </h1>
+
             <p className="text-base md:text-lg text-slate-300">{description}</p>
+
             {helperText && (
             <p className="text-sm text-slate-400 border-l-2 border-[#B83228] pl-3">
                 {helperText}
@@ -61,8 +65,7 @@ const HeroBanner = ({
                 Producción técnica integral para eventos corporativos.
                 </p>
                 <p className="text-xs text-slate-300 mt-1">
-                Desde pequeñas reuniones hasta grandes conferencias, con equipos
-                propios y enfoque en cada detalle.
+                Desde pequeñas reuniones hasta grandes conferencias, con equipos propios y enfoque en cada detalle.
                 </p>
             </div>
             </div>

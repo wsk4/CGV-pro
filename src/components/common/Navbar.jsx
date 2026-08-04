@@ -1,6 +1,6 @@
-// src/components/common/Navbar.jsx
 import React, { useState } from "react";
 import { useScrollToSection } from "../../hooks/useScrollToSection.js";
+import logo from "../../assets/logo-cgv.webp";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -28,10 +28,15 @@ const Navbar = () => {
         <nav className="w-full fixed top-0 left-0 bg-[#0A0D14]/90 backdrop-blur border-b border-[#334155] z-10">
         <div className="mx-auto max-w-6xl flex items-center justify-between px-4 py-3 sm:px-6">
             <button
-            className="text-xl font-semibold tracking-tight text-white cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#B83228] rounded"
+            className="flex items-center gap-2 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#B83228] rounded"
             onClick={() => handleClick("home")}
+            aria-label="Ir al inicio"
             >
-            CGV pro
+            <img
+                src={logo}
+                alt="CGV Pro"
+                className="h-9 w-auto sm:h-10 md:h-12"
+            />
             </button>
 
             <div className="hidden md:flex gap-4 text-sm">
