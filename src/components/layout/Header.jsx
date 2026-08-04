@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = ({ logo, title, subtitle }) => {
     return (
-        <section className="pt-24 pb-10 border-b border-[#334155]">
+        <section id="home" className="pt-24 pb-10 border-b border-[#334155]">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
             <div className="flex flex-col items-start gap-3">
             {logo ? (
