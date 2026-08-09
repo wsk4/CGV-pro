@@ -1,7 +1,7 @@
 // src/data/blocks.js
 
 export const heroContent = {
-  title: "Productora de eventos corporativos Chile",
+  title: "Eventos  de alto impacto en Chile",
   description:
     "Servicios profesionales de producción de eventos para ocasiones memorables.",
   ctaPrimary: "Ver servicios",

@@ -2,11 +2,6 @@
 
 export const sections = [
   {
-    id: "home",
-    title: "",
-    subtitle: "Productora de eventos corporativos en Chile",
-  },
-  {
     id: "hero",
     title: "Productora de eventos corporativos Chile",
     subtitle:

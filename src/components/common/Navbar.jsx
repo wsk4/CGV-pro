@@ -14,7 +14,7 @@ const Navbar = () => {
     const toggleMenu = () => setIsOpen((prev) => !prev);
 
     const navItems = [
-        { id: "home", label: "Inicio" },
+        { id: "hero", label: "Inicio" },
         { id: "about", label: "Nosotros" },
         { id: "payments", label: "Pagos" },
         { id: "location", label: "Ubicación" },
