@@ -11,7 +11,7 @@ export const heroContent = {
 export const aboutContent = {
   eyebrow: "Quiénes somos",
   title: "Producción impecable de eventos corporativos",
-  body: "En Cgv Pro, nos especializamos en la producción impecable de eventos corporativos. Nuestro equipo garantiza que sus eventos empresariales sean memorables e impactantes, desde pequeñas reuniones hasta grandes conferencias.",
+  body: "  Transformamos grandes visiones en producciones memorables. Descubra la infraestructura, la técnica y el respaldo profesional que definen a CGV PRO.",
 };
 
 export const paymentsContent = {
