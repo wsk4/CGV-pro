@@ -43,3 +43,44 @@ export const sections = [
       "Envíanos los detalles de tu actividad y te ayudaremos a producir un evento impecable.",
   },
 ];
+
+import evento1 from '../assets/eventos/evento1.webp'
+import evento2 from '../assets/eventos/evento2.webp'
+import evento3 from '../assets/eventos/evento3.webp'
+import evento4 from '../assets/eventos/evento4.webp'
+import evento5 from '../assets/eventos/evento5.webp'
+import evento6 from '../assets/eventos/evento6.webp'
+
+// Array de imágenes de eventos
+export const eventImages = [
+  { 
+    id: 1, 
+    imageUrl: evento1, 
+    altText: 'Demo Day 2025 - Presentación de proyectos' 
+  },
+  { 
+    id: 2, 
+    imageUrl: evento2, 
+    altText: 'Feria Tecnológica 2025 - Stand CGV' 
+  },
+  { 
+    id: 3, 
+    imageUrl: evento3, 
+    altText: 'Hackathon 2024 - Ganadores' 
+  },
+  { 
+    id: 4, 
+    imageUrl: evento4, 
+    altText: 'Workshop React 2024' 
+  },
+  { 
+    id: 5, 
+    imageUrl: evento5, 
+    altText: 'Demo Day 2024 - Showcase' 
+  },
+  { 
+    id: 6, 
+    imageUrl: evento6, 
+    altText: 'Conferencia Tech 2024' 
+  },
+]
