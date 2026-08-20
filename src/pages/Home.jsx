@@ -58,33 +58,33 @@ const Home = () => {
             </SectionWrapper>
 
             <SectionWrapper id="about">
-                <div className="mx-auto max-w-7xl">
-                    <div className="mx-auto mb-8 max-w-4xl text-center md:mb-10">
-                        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#B83228]">
-                            {aboutContent.eyebrow}
-                        </p>
+    <div className="mx-auto w-full max-w-[1440px]">
+        <div className="mx-auto mb-8 max-w-4xl text-center md:mb-10">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#B83228]">
+                {aboutContent.eyebrow}
+            </p>
 
-                        <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
-                            {aboutContent.title}
-                        </h2>
+            <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
+                {aboutContent.title}
+            </h2>
 
-                        <p className="mx-auto max-w-3xl leading-relaxed text-slate-300">
-                            {aboutContent.body}
-                        </p>
-                    </div>
+            <p className="mx-auto max-w-3xl leading-relaxed text-slate-300">
+                {aboutContent.body}
+            </p>
+        </div>
 
-                    <CoverFlowCarousel items={eventImages} />
+        <CoverFlowCarousel items={eventImages} />
 
-                    <div className="mx-auto mt-8 max-w-3xl text-center md:mt-10">
-                        <p className="text-sm leading-relaxed text-slate-400 md:text-base">
-                            Cada imagen representa una producción realizada por CGV PRO:
-                            escenarios, activaciones de marca, montajes técnicos y eventos
-                            corporativos ejecutados con planificación, infraestructura y
-                            atención al detalle.
-                        </p>
-                    </div>
-                </div>
-            </SectionWrapper>
+        <div className="mx-auto mt-8 max-w-3xl text-center md:mt-10">
+            <p className="text-sm leading-relaxed text-slate-400 md:text-base">
+                Cada imagen representa una producción realizada por CGV PRO:
+                escenarios, activaciones de marca, montajes técnicos y eventos
+                corporativos ejecutados con planificación, infraestructura y
+                atención al detalle.
+            </p>
+        </div>
+    </div>
+</SectionWrapper>
 
             <SectionWrapper id="payments">
                 <div className="grid gap-6 md:grid-cols-2">
