@@ -1,5 +1,4 @@
 // src/components/ui/Card.jsx
-import React from "react";
 
 const Card = ({ title, body }) => {
     return (

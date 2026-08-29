@@ -1,4 +1,3 @@
-import React from "react";
 import SectionWrapper from "../components/layout/SectionWrapper.jsx";
 import HeroBanner from "../components/ui/HeroBanner.jsx";
 import Card from "../components/ui/Card.jsx";
@@ -17,7 +16,9 @@ import {
 import { heroImages } from "../data/heroImages.js";
 import { useScrollToSection } from "../hooks/useScrollToSection.js";
 import { Paper, Button, TextField } from "@mui/material";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import logo from "../assets/logo-cgv.webp";
+import paymentMethodsBackground from "../assets/payments/payment-methods-bg.webp";
 
 const Home = () => {
     const scrollToSection = useScrollToSection();
@@ -38,6 +39,14 @@ const Home = () => {
 
     const handleHeroSecondary = () => {
         scrollToSection("contact");
+    };
+
+    const handlePaymentContact = () => {
+        scrollToSection("contact");
+    };
+
+    const handlePaymentWhatsApp = () => {
+        window.open(paymentsContent.whatsappUrl, "_blank", "noopener,noreferrer");
     };
 
     return (
@@ -87,28 +96,101 @@ const Home = () => {
 </SectionWrapper>
 
             <SectionWrapper id="payments">
-                <div className="grid gap-6 md:grid-cols-2">
+                <div
+                    className="relative overflow-hidden rounded-[2rem] border border-slate-800 bg-cover bg-center px-4 py-14 sm:px-8 md:px-12 md:py-20"
+                    style={{
+                    backgroundImage: `linear-gradient(
+                        rgba(123, 68, 37, 0.64),
+                        rgba(123, 68, 37, 0.64)
+                    ), url(${paymentMethodsBackground})`,
+                    }}
+                >
+                    <div className="relative z-10 mx-auto max-w-5xl">
+                    <h2 className="mb-10 text-center text-3xl font-bold uppercase tracking-[0.14em] text-white sm:text-4xl md:mb-14 md:text-5xl">
+                        {paymentsContent.title}
+                    </h2>
+
                     <Paper
+                        elevation={0}
                         sx={{
-                            backgroundColor: "#161B26",
-                            border: "1px solid #334155",
+                        backgroundColor: "#FFFFFF",
+                        borderRadius: 0,
                         }}
-                        className="p-6 shadow-sm md:p-7"
+                        className="mx-auto max-w-4xl px-6 py-10 text-center shadow-2xl sm:px-10 sm:py-12 md:px-16 md:py-16"
                     >
-                        <h3 className="mb-2 text-xl font-semibold text-white">
-                            {paymentsContent.title}
+                        <h3 className="text-2xl font-semibold tracking-wide text-slate-900 md:text-3xl">
+                        {paymentsContent.title}
                         </h3>
 
-                        <p className="mb-1 text-sm text-slate-400">
-                            {paymentsContent.highlight}
+                        <p className="mx-auto mt-7 max-w-3xl text-base leading-8 text-slate-600 md:text-lg">
+                        {paymentsContent.highlight}
                         </p>
 
-                        <p className="text-slate-300">
-                            {paymentsContent.body}
+                        <p className="mx-auto mt-1 max-w-3xl text-base leading-8 text-slate-600 md:text-lg">
+                        {paymentsContent.body}
                         </p>
+
+                        <Button
+                            variant="contained"
+                            onClick={handlePaymentWhatsApp}
+                            startIcon={<WhatsAppIcon />}
+                            sx={{
+                                mt: 4,
+                                px: 3,
+                                py: 1.5,
+                                borderRadius: 0,
+                                backgroundColor: "#4B616B",
+                                color: "#FFFFFF",
+                                fontWeight: 700,
+                                textTransform: "none",
+                                "&:hover": {
+                                backgroundColor: "#354A54",
+                                },
+                            }}
+                            >
+                            {paymentsContent.whatsappLabel}
+                        </Button>
+
+                        <div className="mt-10 space-y-4">
+                        <p className="text-xl font-medium text-slate-900 md:text-2xl">
+                            {paymentsContent.companyName}
+                        </p>
+
+                        <address className="not-italic text-base text-slate-600 md:text-lg">
+                            {paymentsContent.address}
+                        </address>
+
+                        <a
+                            href={`tel:${paymentsContent.phone.replace(/\s/g, "")}`}
+                            className="inline-block text-base font-semibold text-[#2A5A87] transition-colors hover:text-[#B83228] hover:underline md:text-lg"
+                        >
+                            {paymentsContent.phone}
+                        </a>
+                        </div>
+
+                        <Button
+                        variant="contained"
+                        onClick={handlePaymentContact}
+                        sx={{
+                            mt: 5,
+                            px: 3.5,
+                            py: 1.5,
+                            borderRadius: 0,
+                            backgroundColor: "#000000",
+                            color: "#FFFFFF",
+                            fontWeight: 700,
+                            letterSpacing: "0.1em",
+                            "&:hover": {
+                            backgroundColor: "#262626",
+                            },
+                        }}
+                        >
+                        ESCRÍBENOS
+                        </Button>
                     </Paper>
+                    </div>
                 </div>
-            </SectionWrapper>
+                </SectionWrapper>
 
             <SectionWrapper id="location">
                 <Paper

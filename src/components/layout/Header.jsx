@@ -1,4 +1,3 @@
-import React from "react";
 
 const Header = ({ logo, title, subtitle }) => {
     return (

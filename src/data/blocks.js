@@ -15,9 +15,17 @@ export const aboutContent = {
 };
 
 export const paymentsContent = {
-  title: "Medios de pago",
-  body: "Ya contamos con la opción de pago con tarjetas de crédito y débito, además de los canales tradicionales: transferencia y efectivo.",
-  highlight: "Información importante para nuestros clientes.",
+  title: "MEDIOS DE PAGO",
+  highlight:
+    "Ahora puedes pagar con tarjetas de crédito y débito.",
+  body:
+    "También contamos con los canales tradicionales de transferencia bancaria y efectivo.",
+  whatsappLabel: "¿TIENES DUDAS?",
+  companyName: "CGV Pro SpA",
+  address: "San Sebastián 2750, Las Condes, Chile",
+  phone: "+56 9 9671 1183",
+  whatsappUrl:
+    "https://wa.me/56996711183?text=Hola%20CGV%20Pro,%20tengo%20una%20consulta%20sobre%20los%20medios%20de%20pago.",
 };
 
 export const locationContent = {

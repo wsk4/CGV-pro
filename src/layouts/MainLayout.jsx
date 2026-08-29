@@ -1,5 +1,4 @@
 // src/layouts/MainLayout.jsx
-import React from "react";
 import Navbar from "../components/common/Navbar.jsx";
 import Footer from "../components/common/Footer.jsx";
 
