@@ -192,22 +192,6 @@ const Home = () => {
                 </div>
                 </SectionWrapper>
 
-            <SectionWrapper id="location">
-                <Paper
-                    sx={{
-                        backgroundColor: "#161B26",
-                        border: "1px solid #334155",
-                    }}
-                    className="p-6 shadow-sm md:p-7"
-                >
-                    <h3 className="mb-2 text-xl font-semibold text-white">
-                        {locationContent.title}
-                    </h3>
-
-                    <p className="text-slate-300">{locationContent.body}</p>
-                </Paper>
-            </SectionWrapper>
-
             <SectionWrapper id="services">
                 <div className="mx-auto mb-8 max-w-4xl text-center">
                     <h2 className="mb-2 text-2xl font-bold text-white md:text-3xl">

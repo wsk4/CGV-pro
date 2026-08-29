@@ -20,11 +20,6 @@ export const sections = [
       "Contamos con la opción de pago con tarjetas de crédito y débito, además de los canales tradicionales: transferencia y efectivo.",
   },
   {
-    id: "location",
-    title: "Ubicación",
-    subtitle: "San Sebastián 2750, Las Condes, Chile",
-  },
-  {
     id: "services",
     title: "Servicios profesionales de producción de eventos",
     subtitle:
