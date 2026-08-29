@@ -33,7 +33,7 @@ export const sections = [
   },
   {
     id: "contact",
-    title: "Hablemos de tu próximo evento",
+    title: "Conéctese con nosotros",
     subtitle:
       "Envíanos los detalles de tu actividad y te ayudaremos a producir un evento impecable.",
   },
