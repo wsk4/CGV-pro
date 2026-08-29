@@ -31,12 +31,6 @@ export const sections = [
     subtitle:
       "Regístrate para recibir información sobre ofertas especiales, rebajas y eventos.",
   },
-  {
-    id: "contact",
-    title: "Conéctese con nosotros",
-    subtitle:
-      "Envíanos los detalles de tu actividad y te ayudaremos a producir un evento impecable.",
-  },
 ];
 
 import evento1 from '../assets/eventos/evento1.webp'

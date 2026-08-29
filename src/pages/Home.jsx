@@ -277,29 +277,6 @@ const Home = () => {
                     </div>
                 </Paper>
             </SectionWrapper>
-
-            <SectionWrapper id="contact">
-                <Paper
-                    sx={{
-                        backgroundColor: "#161B26",
-                        border: "1px solid #334155",
-                    }}
-                    className="mx-auto max-w-3xl p-6 shadow-sm md:p-8"
-                >
-                    <h2 className="mb-2 text-2xl font-semibold text-white">
-                        {contactSection?.title}
-                    </h2>
-
-                    <p className="mb-4 text-slate-300">
-                        {contactSection?.subtitle}
-                    </p>
-
-                    <p className="text-sm text-slate-500">
-                        Pendiente: integrar formulario de contacto o enlace a
-                        canales reales de comunicación.
-                    </p>
-                </Paper>
-            </SectionWrapper>
         </>
     );
 };

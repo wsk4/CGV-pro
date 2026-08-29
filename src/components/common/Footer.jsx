@@ -38,8 +38,10 @@ function Footer() {
   };
 
   return (
-    <footer className="relative overflow-hidden border-t border-[#334155] bg-[#0A0D14] text-white">
-      {/* Brillos de acento: usan solamente el terracota existente */}
+    <footer
+      id="contact"
+      className="scroll-mt-24 relative overflow-hidden border-t border-[#334155] bg-[#0A0D14] text-white"
+    >
       <div className="pointer-events-none absolute -left-24 top-0 h-72 w-72 rounded-full bg-[#B83228]/15 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-40 right-0 h-80 w-80 rounded-full bg-[#8F2620]/20 blur-3xl" />
 
@@ -48,6 +50,7 @@ function Footer() {
           <div className="max-w-xl">
             <div className="mb-4 flex items-center gap-3">
               <span className="h-px w-10 bg-[#B83228]" />
+
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A0AABF]">
                 Comunidad CGV
               </p>
@@ -88,7 +91,9 @@ function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col gap-5 border-t border-[#334155] pt-6 text-sm text-[#A0AABF] md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} CGV. Todos los derechos reservados.</p>
+          <p>
+            © {new Date().getFullYear()} CGV. Todos los derechos reservados.
+          </p>
 
           <button
             type="button"
@@ -96,6 +101,7 @@ function Footer() {
             className="group inline-flex w-fit items-center gap-2 text-[#A0AABF] transition-colors hover:text-white focus:outline-none focus:ring-2 focus:ring-[#B83228] focus:ring-offset-2 focus:ring-offset-[#0A0D14]"
           >
             Volver arriba
+
             <FaArrowUp
               aria-hidden="true"
               size={13}
