@@ -34,8 +34,8 @@ export const locationContent = {
 };
 
 export const newsletterContent = {
-  title: "Regístrate para recibir novedades",
-  body: "Recibe información sobre ofertas especiales, rebajas y eventos directamente en tu correo.",
-  placeholder: "Ingresa tu correo electrónico",
-  cta: "Quiero recibir novedades",
+    title: "Mantente conectado con CGV Pro",
+    body: "Recibe novedades sobre nuestros servicios, equipamiento técnico y producciones directamente en tu correo.",
+    placeholder: "Ingresa tu correo electrónico",
+    cta: "Quiero recibir novedades",
 };

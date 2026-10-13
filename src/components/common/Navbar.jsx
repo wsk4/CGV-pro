@@ -18,7 +18,8 @@ const Navbar = () => {
         { id: "about", label: "Nosotros" },
         { id: "payments", label: "Pagos" },
         { id: "services", label: "Servicios" },
-        { id: "newsletter", label: "Novedades" },
+        { id: "novedades", label: "Novedades" },
+        { id: "newsletter", label: "Suscríbete" },
         { id: "contact", label: "Contacto" },
     ];
 

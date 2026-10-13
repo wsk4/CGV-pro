@@ -23,7 +23,7 @@ export const sections = [
     id: "services",
     title: "Servicios profesionales de producción de eventos",
     subtitle:
-      "Producción integral, soporte técnico y logística para eventos corporativos memorables.",
+      "Producción integral de inicio a fin, producción técnica y equipamiento propio para eventos corporativos, activaciones y agencias BTL.",
   },
   {
     id: "newsletter",
