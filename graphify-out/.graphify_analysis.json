@@ -1,0 +1,273 @@
+{
+  "communities": {
+    "0": [
+      "eslint_config",
+      "package",
+      "package_name",
+      "package_private",
+      "package_type",
+      "package_version",
+      "ref_autoprefixer",
+      "ref_emotion_react",
+      "ref_emotion_styled",
+      "ref_eslint",
+      "ref_eslint_js",
+      "ref_eslint_plugin_react_hooks",
+      "ref_eslint_plugin_react_refresh",
+      "ref_globals",
+      "ref_mui_icons_material",
+      "ref_postcss",
+      "ref_tailwindcss",
+      "ref_tailwindcss_vite",
+      "ref_types_react",
+      "ref_types_react_dom",
+      "ref_vite",
+      "ref_vitejs_plugin_react",
+      "vite_config",
+      "vite_config_manualchunks"
+    ],
+    "1": [
+      "ref_mui_material",
+      "src_assets_hero_evento_1",
+      "src_assets_hero_evento_2",
+      "src_assets_hero_evento_3",
+      "src_assets_payments_payment_methods_bg",
+      "src_components_layout_sectionwrapper",
+      "src_components_layout_sectionwrapper_sectionwrapper",
+      "src_components_ui_card",
+      "src_components_ui_card_card",
+      "src_components_ui_herobanner",
+      "src_components_ui_herobanner_herobanner",
+      "src_data_blocks",
+      "src_data_blocks_aboutcontent",
+      "src_data_blocks_herocontent",
+      "src_data_blocks_locationcontent",
+      "src_data_blocks_newslettercontent",
+      "src_data_blocks_paymentscontent",
+      "src_data_heroimages",
+      "src_data_heroimages_heroimages",
+      "src_pages_home"
+    ],
+    "2": [
+      "ref_react_icons",
+      "ref_react_router_dom",
+      "src_app",
+      "src_app_app",
+      "src_assets_logo_cgv",
+      "src_components_common_footer",
+      "src_components_common_footer_footer",
+      "src_components_common_footer_sociallinks",
+      "src_components_common_navbar",
+      "src_components_common_navbar_navbar",
+      "src_hooks_usescrolltosection",
+      "src_hooks_usescrolltosection_usescrolltosection",
+      "src_layouts_mainlayout",
+      "src_layouts_mainlayout_mainlayout",
+      "src_pages_home_home"
+    ],
+    "3": [
+      "package_devdependencies",
+      "package_devdependencies_autoprefixer",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_js",
+      "package_devdependencies_eslint_plugin_react_hooks",
+      "package_devdependencies_eslint_plugin_react_refresh",
+      "package_devdependencies_globals",
+      "package_devdependencies_postcss",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_tailwindcss_vite",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_vite",
+      "package_devdependencies_vitejs_plugin_react"
+    ],
+    "4": [
+      "package_dependencies",
+      "package_dependencies_emotion_react",
+      "package_dependencies_emotion_styled",
+      "package_dependencies_framer_motion",
+      "package_dependencies_lucide_react",
+      "package_dependencies_mui_icons_material",
+      "package_dependencies_mui_material",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_icons",
+      "package_dependencies_react_router_dom"
+    ],
+    "5": [
+      "ref_framer_motion",
+      "ref_lucide_react",
+      "ref_react",
+      "ref_react_dom",
+      "src_components_ui_coverflowcarousel",
+      "src_components_ui_coverflowcarousel_coverflowcarousel",
+      "src_index",
+      "src_main",
+      "src_theme_apptheme",
+      "src_theme_apptheme_apptheme",
+      "src_theme_apptheme_theme"
+    ],
+    "6": [
+      "src_assets_eventos_evento1",
+      "src_assets_eventos_evento2",
+      "src_assets_eventos_evento3",
+      "src_assets_eventos_evento4",
+      "src_assets_eventos_evento5",
+      "src_assets_eventos_evento6",
+      "src_data_sections",
+      "src_data_sections_eventimages",
+      "src_data_sections_sections"
+    ],
+    "7": [
+      "src_assets_novedades_novedad1",
+      "src_assets_novedades_novedad2",
+      "src_assets_novedades_novedad3",
+      "src_assets_novedades_novedad4",
+      "src_data_novedades",
+      "src_data_novedades_novedadescards",
+      "src_data_novedades_novedadescontent",
+      "src_data_novedades_novedadesimages"
+    ],
+    "8": [
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_preview"
+    ],
+    "9": [
+      "src_components_layout_header",
+      "src_components_layout_header_header"
+    ],
+    "10": [
+      "tailwind_config",
+      "tailwindcss"
+    ]
+  },
+  "cohesion": {
+    "0": 0.10507246376811594,
+    "1": 0.14736842105263157,
+    "2": 0.22857142857142856,
+    "3": 0.14285714285714285,
+    "4": 0.18181818181818182,
+    "5": 0.2,
+    "6": 0.2222222222222222,
+    "7": 0.25,
+    "8": 0.4,
+    "9": 1.0,
+    "10": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_pages_home_home",
+      "label": "Home()",
+      "degree": 8
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "src_hooks_usescrolltosection_usescrolltosection",
+      "label": "useScrollToSection()",
+      "degree": 5
+    },
+    {
+      "id": "src_layouts_mainlayout_mainlayout",
+      "label": "MainLayout()",
+      "degree": 5
+    },
+    {
+      "id": "ref_mui_material",
+      "label": "@mui/material",
+      "degree": 4
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "degree": 4
+    },
+    {
+      "id": "src_app_app",
+      "label": "App()",
+      "degree": 4
+    },
+    {
+      "id": "src_components_common_navbar_navbar",
+      "label": "Navbar()",
+      "degree": 4
+    },
+    {
+      "id": "src_components_common_footer_footer",
+      "label": "Footer()",
+      "degree": 3
+    },
+    {
+      "id": "src_components_layout_sectionwrapper_sectionwrapper",
+      "label": "SectionWrapper()",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Home()",
+      "target": "SectionWrapper()",
+      "source_files": [
+        "src/pages/Home.jsx",
+        "src/components/layout/SectionWrapper.jsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "Home()",
+      "target": "Card()",
+      "source_files": [
+        "src/pages/Home.jsx",
+        "src/components/ui/Card.jsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "Home()",
+      "target": "CoverFlowCarousel()",
+      "source_files": [
+        "src/pages/Home.jsx",
+        "src/components/ui/CoverFlowCarousel.jsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "Home()",
+      "target": "HeroBanner()",
+      "source_files": [
+        "src/pages/Home.jsx",
+        "src/components/ui/HeroBanner.jsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "App()",
+      "target": "MainLayout()",
+      "source_files": [
+        "src/App.jsx",
+        "src/layouts/MainLayout.jsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
