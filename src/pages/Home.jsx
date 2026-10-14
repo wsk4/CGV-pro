@@ -5,7 +5,6 @@ import CoverFlowCarousel from "../components/ui/CoverFlowCarousel.jsx";
 
 import {
     novedadesContent,
-    novedadesCards,
     novedadesImages,
 } from "../data/novedades.js";
 
@@ -15,7 +14,6 @@ import {
     heroContent,
     aboutContent,
     paymentsContent,
-    locationContent,
     newsletterContent,
 } from "../data/blocks.js";
 
@@ -31,7 +29,6 @@ const Home = () => {
 
     const aboutSection = sections.find((section) => section.id === "about");
     const servicesSection = sections.find((section) => section.id === "services");
-    const contactSection = sections.find((section) => section.id === "contact");
 
     const handleHeroPrimary = () => {
         scrollToSection("services");
@@ -70,24 +67,26 @@ const Home = () => {
             {/* ABOUT */}
             <SectionWrapper id="about">
                 <div className="mx-auto w-full max-w-[1440px]">
-                    <div className="mx-auto mb-8 max-w-4xl text-center md:mb-10">
+                    <div className="mx-auto mb-10 max-w-4xl text-center md:mb-12">
                         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#B83228]">
                             {aboutContent.eyebrow}
                         </p>
 
-                        <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
+                        <h2 className="mb-5 text-3xl font-bold text-white md:text-4xl">
                             {aboutContent.title}
                         </h2>
 
-                        <p className="mx-auto max-w-3xl leading-relaxed text-slate-300">
+                        <p className="mx-auto max-w-3xl text-lg leading-relaxed text-slate-300">
                             {aboutContent.body}
                         </p>
                     </div>
 
-                    <CoverFlowCarousel items={eventImages} />
+<div className="mt-14">
+                        <CoverFlowCarousel items={eventImages} />
+                    </div>
 
-                    <div className="mx-auto mt-8 max-w-3xl text-center md:mt-10">
-                        <p className="text-sm leading-relaxed text-slate-400 md:text-base">
+                    <div className="mx-auto mt-10 max-w-3xl text-center md:mt-12">
+                        <p className="text-base leading-relaxed text-slate-400 md:text-lg">
                             Cada imagen representa una producción realizada por CGV PRO:
                             escenarios, activaciones de marca, montajes técnicos y eventos
                             corporativos ejecutados con planificación, infraestructura y
@@ -197,8 +196,8 @@ const Home = () => {
 
             {/* SERVICES */}
             <SectionWrapper id="services">
-                <div className="mx-auto mb-8 max-w-4xl text-center">
-                    <h2 className="mb-2 text-2xl font-bold text-white md:text-3xl">
+                <div className="mx-auto mb-10 max-w-4xl text-center">
+                    <h2 className="mb-3 text-2xl font-bold text-white md:text-3xl">
                         {servicesSection?.title}
                     </h2>
 
@@ -207,7 +206,7 @@ const Home = () => {
                     </p>
                 </div>
 
-                <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
                     <Card
                         title="Producción integral"
                         body="Nos hacemos cargo de tu evento de inicio a fin: planificación, coordinación, logística, montaje y ejecución, para que solo te preocupes por vivir la experiencia."
@@ -232,12 +231,12 @@ const Home = () => {
 
             {/* NOVEDADES */}
             <SectionWrapper id="novedades">
-                <div className="mx-auto mb-8 max-w-4xl text-center">
+                <div className="mx-auto mb-10 max-w-4xl text-center">
                     <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#B83228]">
                         {novedadesContent.eyebrow}
                     </p>
 
-                    <h2 className="mb-2 text-2xl font-bold text-white md:text-3xl">
+                    <h2 className="mb-3 text-2xl font-bold text-white md:text-3xl">
                         {novedadesContent.title}
                     </h2>
 
@@ -246,10 +245,12 @@ const Home = () => {
                     </p>
                 </div>
 
-                <CoverFlowCarousel items={novedadesImages} />
+                <div className="mt-14">
+                    <CoverFlowCarousel items={novedadesImages} />
+                </div>
 
-                <div className="mx-auto mt-8 max-w-3xl text-center md:mt-10">
-                    <p className="text-sm leading-relaxed text-slate-400 md:text-base">
+                <div className="mx-auto mt-10 max-w-3xl text-center md:mt-12">
+                    <p className="text-base leading-relaxed text-slate-400 md:text-lg">
                         Cada imagen representa una novedad o producción reciente de CGV PRO:
                         montajes técnicos, activaciones de marca y eventos corporativos
                         ejecutados con equipamiento propio y producción integral.
@@ -264,13 +265,13 @@ const Home = () => {
                         backgroundColor: "#161B26",
                         border: "1px solid #334155",
                     }}
-                    className="mx-auto max-w-3xl p-6 shadow-sm md:p-8"
+                    className="mx-auto max-w-3xl p-8 shadow-sm md:p-10"
                 >
-                    <h2 className="mb-2 text-2xl font-semibold text-white">
+                    <h2 className="mb-3 text-2xl font-semibold text-white">
                         {newsletterContent.title}
                     </h2>
 
-                    <p className="mb-4 text-slate-300">
+                    <p className="mb-5 text-slate-300">
                         {newsletterContent.body}
                     </p>
 

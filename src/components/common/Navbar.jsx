@@ -24,7 +24,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="w-full fixed top-0 left-0 bg-[#0A0D14]/90 backdrop-blur border-b border-[#334155] z-10">
+        <nav className="w-full fixed top-0 left-0 bg-[#0A0D14]/95 backdrop-blur border-b border-[#334155] z-10">
         <div className="mx-auto max-w-6xl flex items-center justify-between px-4 py-3 sm:px-6">
             <button
             className="flex items-center gap-2 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#B83228] rounded"

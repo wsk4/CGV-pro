@@ -251,10 +251,10 @@ export default function CoverFlowCarousel({
                         onClick={() => changeIndex(index)}
                         aria-label={`Ver evento ${index + 1} de ${totalItems}`}
                         aria-current={isActive}
-                        className={`absolute overflow-hidden rounded-2xl border bg-slate-950 text-left outline-none focus-visible:ring-2 focus-visible:ring-[#B83228] ${
+                        className={`absolute overflow-hidden rounded-2xl border bg-slate-950 text-left outline-none focus-visible:ring-2 focus-visible:ring-[#B83228] transition-[border-color,box-shadow] duration-200 ${
                         isActive
-                            ? "border-[#B83228] shadow-[0_18px_65px_rgba(0,0,0,0.58)] ring-1 ring-[#B83228]/30"
-                            : "border-slate-600/80 shadow-[0_12px_35px_rgba(0,0,0,0.4)]"
+                            ? "border-[#B83228] shadow-[0_18px_65px_rgba(0,0,0,0.58)] ring-1 ring-[#B83228]/30 motion-safe:hover:border-[#B83228] motion-safe:hover:shadow-[0_25px_75px_rgba(0,0,0,0.65)]"
+                            : "border-slate-600/80 shadow-[0_12px_35px_rgba(0,0,0,0.4)] motion-safe:hover:border-[#B83228]/50 motion-safe:hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
                         }`}
                         style={{
                         width: `${cardWidth}px`,

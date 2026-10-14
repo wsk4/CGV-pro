@@ -45,10 +45,10 @@ function Footer() {
       <div className="pointer-events-none absolute -left-24 top-0 h-72 w-72 rounded-full bg-[#B83228]/15 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-40 right-0 h-80 w-80 rounded-full bg-[#8F2620]/20 blur-3xl" />
 
-      <div className="relative mx-auto max-w-6xl px-6 py-14 md:px-10 md:py-16">
+      <div className="relative mx-auto max-w-6xl px-6 py-16 md:px-10 md:py-20">
         <div className="grid items-center gap-10 md:grid-cols-[1fr_auto]">
           <div className="max-w-xl">
-            <div className="mb-4 flex items-center gap-3">
+            <div className="mb-5 flex items-center gap-3">
               <span className="h-px w-10 bg-[#B83228]" />
 
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A0AABF]">
@@ -60,7 +60,7 @@ function Footer() {
               Conéctate con nosotros
             </h2>
 
-            <p className="mt-4 max-w-lg text-sm leading-6 text-[#A0AABF] md:text-base">
+            <p className="mt-5 max-w-lg text-base leading-6 text-[#A0AABF] md:text-lg">
               Síguenos en nuestras redes sociales y mantente al día con
               nuestras novedades, proyectos y servicios.
             </p>
@@ -90,7 +90,7 @@ function Footer() {
           </nav>
         </div>
 
-        <div className="mt-12 flex flex-col gap-5 border-t border-[#334155] pt-6 text-sm text-[#A0AABF] md:flex-row md:items-center md:justify-between">
+        <div className="mt-14 flex flex-col gap-6 border-t border-[#334155] pt-7 text-sm text-[#A0AABF] md:flex-row md:items-center md:justify-between">
           <p>
             © {new Date().getFullYear()} CGV. Todos los derechos reservados.
           </p>
