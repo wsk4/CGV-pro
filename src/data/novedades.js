@@ -7,54 +7,22 @@ export const novedadesContent = {
     "Enterate de nuestros próximos eventos, nuevos equipamientos, alianzas y proyectos destacados.",
 };
 
-// Opción A: Novedades en cards simples (sin imágenes)
-export const novedadesCards = [
-  {
-    id: 1,
-    title: "Nueva temporada de eventos corporativos",
-    body: "Preparamos una nueva temporada de producciones integrales para empresas, ferias y activaciones de marca en Chile.",
-    date: "Septiembre 2026",
-  },
-  {
-    id: 2,
-    title: "Ampliamos nuestro equipamiento técnico",
-    body: "Incorporamos nuevo equipamiento de sonido, iluminación y estructuras para responder a producciones de mayor escala.",
-    date: "Agosto 2026",
-  },
-  {
-    id: 3,
-    title: "Nuevas alianzas con agencias BTL",
-    body: "Seguimos sumando colaboraciones con agencias BTL para desarrollar activaciones y experiencias de marca más impactantes.",
-    date: "Julio 2026",
-  },
-];
-
-// Opción B: Novedades en carrusel (con imágenes)
-// Reemplaza las rutas por tus imágenes reales en src/assets/novedades/
-import novedad1 from "../assets/novedades/novedad1.webp";
-import novedad2 from "../assets/novedades/novedad2.webp";
-import novedad3 from "../assets/novedades/novedad3.webp";
-import novedad4 from "../assets/novedades/novedad4.webp";
+import nov1 from "../assets/cgv-gallery/20260726_132215.webp";
+import nov2 from "../assets/cgv-gallery/20260726_215211.webp";
+import nov3 from "../assets/cgv-gallery/20260729_121925.webp";
+import nov4 from "../assets/cgv-gallery/blob-3e11452.webp";
+import nov5 from "../assets/cgv-gallery/blob-b4d0cff.webp";
+import nov6 from "../assets/cgv-gallery/Captura de Pantalla 2024-12-27 a la(s) 12.21.0.webp";
+import nov7 from "../assets/cgv-gallery/IMG_2155.webp";
+import nov8 from "../assets/cgv-gallery/IMG-20250506-WA0007.webp";
 
 export const novedadesImages = [
-  {
-    id: 1,
-    imageUrl: novedad1,
-    altText: "Nuevo montaje técnico CGV Pro",
-  },
-  {
-    id: 2,
-    imageUrl: novedad2,
-    altText: "Producción de evento corporativo reciente",
-  },
-  {
-    id: 3,
-    imageUrl: novedad3,
-    altText: "Activación de marca con agencia BTL",
-  },
-  {
-    id: 4,
-    imageUrl: novedad4,
-    altText: "Equipamiento propio en terreno",
-  },
+  { id: 1, imageUrl: nov1, altText: 'Producción CGV Pro - 20260726_132215.webp' },
+  { id: 2, imageUrl: nov2, altText: 'Producción CGV Pro - 20260726_215211.webp' },
+  { id: 3, imageUrl: nov3, altText: 'Producción CGV Pro - 20260729_121925.webp' },
+  { id: 4, imageUrl: nov4, altText: 'Producción CGV Pro - blob-3e11452.webp' },
+  { id: 5, imageUrl: nov5, altText: 'Producción CGV Pro - blob-b4d0cff.webp' },
+  { id: 6, imageUrl: nov6, altText: 'Producción CGV Pro - Captura de Pantalla 2024-12-27 a la(s) 12.21.0.webp' },
+  { id: 7, imageUrl: nov7, altText: 'Producción CGV Pro - IMG_2155.webp' },
+  { id: 8, imageUrl: nov8, altText: 'Producción CGV Pro - IMG-20250506-WA0007.webp' },
 ];

@@ -33,43 +33,22 @@ export const sections = [
   },
 ];
 
-import evento1 from '../assets/eventos/evento1.webp'
-import evento2 from '../assets/eventos/evento2.webp'
-import evento3 from '../assets/eventos/evento3.webp'
-import evento4 from '../assets/eventos/evento4.webp'
-import evento5 from '../assets/eventos/evento5.webp'
-import evento6 from '../assets/eventos/evento6.webp'
+import ev1 from '../assets/cgv-gallery/1777924405924.webp';
+import ev2 from '../assets/cgv-gallery/20250905_094614.webp';
+import ev3 from '../assets/cgv-gallery/20250926_201340.webp';
+import ev4 from '../assets/cgv-gallery/20260123_222203.webp';
+import ev5 from '../assets/cgv-gallery/20260410_183723 .webp';
+import ev6 from '../assets/cgv-gallery/20260603_195201 .webp';
+import ev7 from '../assets/cgv-gallery/20260708_111738.webp';
+import ev8 from '../assets/cgv-gallery/20260726_132134.webp';
 
-// Array de imágenes de eventos
 export const eventImages = [
-  { 
-    id: 1, 
-    imageUrl: evento1, 
-    altText: 'Demo Day 2025 - Presentación de proyectos' 
-  },
-  { 
-    id: 2, 
-    imageUrl: evento2, 
-    altText: 'Feria Tecnológica 2025 - Stand CGV' 
-  },
-  { 
-    id: 3, 
-    imageUrl: evento3, 
-    altText: 'Hackathon 2024 - Ganadores' 
-  },
-  { 
-    id: 4, 
-    imageUrl: evento4, 
-    altText: 'Workshop React 2024' 
-  },
-  { 
-    id: 5, 
-    imageUrl: evento5, 
-    altText: 'Demo Day 2024 - Showcase' 
-  },
-  { 
-    id: 6, 
-    imageUrl: evento6, 
-    altText: 'Conferencia Tech 2024' 
-  },
-]
+  { id: 1, imageUrl: ev1, altText: 'Producción CGV Pro - 1777924405924.webp' },
+  { id: 2, imageUrl: ev2, altText: 'Producción CGV Pro - 20250905_094614.webp' },
+  { id: 3, imageUrl: ev3, altText: 'Producción CGV Pro - 20250926_201340.webp' },
+  { id: 4, imageUrl: ev4, altText: 'Producción CGV Pro - 20260123_222203.webp' },
+  { id: 5, imageUrl: ev5, altText: 'Producción CGV Pro - 20260410_183723 .webp' },
+  { id: 6, imageUrl: ev6, altText: 'Producción CGV Pro - 20260603_195201 .webp' },
+  { id: 7, imageUrl: ev7, altText: 'Producción CGV Pro - 20260708_111738.webp' },
+  { id: 8, imageUrl: ev8, altText: 'Producción CGV Pro - 20260726_132134.webp' },
+];
